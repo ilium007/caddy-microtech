@@ -2,8 +2,7 @@ FROM caddy:builder AS builder
 
 RUN caddy-builder \
     github.com/caddy-dns/cloudflare \
-    github.com/mholt/caddy-webdav \
-    github.com/greenpau/caddy-security
+    github.com/mholt/caddy-webdav
 
 FROM caddy:latest
 
