@@ -9,7 +9,10 @@ on:
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+    #tags: [ 'v*.*.*' ]
+    tags: |
+      # set latest tag for default branch
+      type=raw,value=latest,enable={{is_default_branch}}
   pull_request:
     branches: [ "main" ]
 
