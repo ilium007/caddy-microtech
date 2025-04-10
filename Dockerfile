@@ -6,6 +6,6 @@ RUN xcaddy build \
     --with github.com/mholt/caddy-webdav \
     --with github.com/WeidiDeng/caddy-cloudflare-ip
 
-FROM caddy:2.9.1
+FROM caddy:latest
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
