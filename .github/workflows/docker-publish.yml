@@ -64,7 +64,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: master
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
