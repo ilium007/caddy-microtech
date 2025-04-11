@@ -6,7 +6,7 @@ RUN xcaddy build \
     #--with github.com/caddy-dns/cloudflare@188b4850c0f2f5565a6310810c936ea960e2210f \
     --with github.com/caddy-dns/cloudflare@master \
     --with github.com/caddyserver/certmagic@master \
-    --with github.com/caddyserver/caddy@master \
+    --with github.com/caddyserver/caddy \
     --with github.com/mholt/caddy-webdav \
     --with github.com/WeidiDeng/caddy-cloudflare-ip
     
