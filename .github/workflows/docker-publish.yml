@@ -8,6 +8,7 @@ name: build.caddy-cloudflare
 on:
   #schedule:
   #  - cron: '35 16 * * *'
+  workflow_dispatch:  # allows to run the workflow manually from the Actions tab
   push:
     branches: [ "master" ]
     # Publish semver tags as releases.
