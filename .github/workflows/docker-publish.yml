@@ -1,6 +1,10 @@
 # Workflow to build and push a Docker image to Docker Hub, GitHub and Quay Container Registries
 name: Build caddy-cloudflare
 
+permissions:
+  contents: read
+  packages: write
+      
 # Controls when the action will run
 on:
   workflow_dispatch:  # allows to run the workflow manually from the Actions tab
