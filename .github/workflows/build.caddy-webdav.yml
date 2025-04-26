@@ -1,4 +1,4 @@
-name: build.caddy-cloudflare
+name: build.caddy-webdav
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -14,7 +14,7 @@ on:
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
     paths:
-      - caddy-cloudflare/Dockerfile
+      - caddy-webdav/Dockerfile
 
 
 env:
@@ -22,7 +22,7 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
-  DOCKER_NAME: caddy-cloudflare
+  DOCKER_NAME: caddy-webdav
 
 
 jobs:
