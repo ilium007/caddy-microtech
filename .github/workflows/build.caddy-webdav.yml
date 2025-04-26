@@ -1,4 +1,4 @@
-name: build.caddy-webdav
+name: Build caddy-webdav
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -10,7 +10,7 @@ on:
   #  - cron: '35 16 * * *'
   workflow_dispatch:  # allows to run the workflow manually from the Actions tab
   push:
-    # branches: [ "master" ]
+    branches: [ "master" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
     paths:
@@ -21,7 +21,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: caddy-webdav
   DOCKER_NAME: caddy-webdav
 
 
