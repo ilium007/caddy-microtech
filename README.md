@@ -1,5 +1,6 @@
 # Caddy Docker Custom Builds
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ilium007/caddy-microtech?label=Release)](https://github.com/ilium007/caddy-microtech/releases)
+[![License](https://img.shields.io/github/license/serfriz/caddy-custom-builds?label=License)](https://github.com/ilium007/caddy-microtech/blob/main/LICENSE)
 
 [Caddy](https://github.com/caddyserver/caddy) takes a [modular approach](https://caddyserver.com/docs/extending-caddy) to building Docker images, allowing users to include only the [modules](https://caddyserver.com/docs/modules/) they need. This repository aims to provide flexibility and convenience to run Caddy with specific combinations of modules by providing pre-built images according to the needs and preferences of the users.
 
